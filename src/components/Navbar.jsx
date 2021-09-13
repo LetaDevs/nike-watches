@@ -27,7 +27,7 @@ const Navbar = () => {
 					<a href='#correas' className='navbar__nav-link'>
 						Correas
 					</a>
-					<a href='#' className='navbar__nav-link navbar__nav-link--login'>
+					<a href='#!' className='navbar__nav-link navbar__nav-link--login'>
 						Login
 					</a>
 				</nav>

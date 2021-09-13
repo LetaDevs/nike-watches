@@ -2,7 +2,7 @@ import React from 'react';
 
 const Caracteristicas = () => {
 	return (
-		<section className='caracteristicas'>
+		<section id='caracteristicas' className='caracteristicas'>
 			<div className='caracteristicas__container'>
 				<div className='caracteristicas__card'>
 					<img src='./img/1.png' alt='caracteristica nike watch' />

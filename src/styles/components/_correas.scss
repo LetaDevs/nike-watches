@@ -1,0 +1,50 @@
+.correas {
+	padding: 40px 0;
+	&__container {
+		width: $mobileWidth;
+		margin: 0 auto;
+
+		@include mq($ipad) {
+			width: $ipadWidth;
+		}
+		@include mq($ipadPro) {
+			width: $ipadProWidth;
+		}
+		@include mq($desktop) {
+			width: $desktopWidth;
+			height: 100vh;
+			padding: 60px 0;
+		}
+	}
+
+	&__text {
+		text-align: center;
+
+		@include mq($desktop) {
+			text-align: left;
+		}
+	}
+
+	&__title {
+		margin-bottom: 20px;
+
+		@include mq($desktop) {
+			font-size: 35px;
+		}
+	}
+
+	&__images {
+		margin-top: 40px;
+		display: flex;
+		gap: 20px;
+		overflow-x: scroll;
+
+		@include mq($desktop) {
+			overflow-x: hidden;
+		}
+	}
+
+	&__img {
+		width: 100%;
+	}
+}

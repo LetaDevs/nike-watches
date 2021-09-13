@@ -2,7 +2,7 @@ import React from 'react';
 
 const Estilos = () => {
 	return (
-		<section className='estilos'>
+		<section id='estilos' className='estilos'>
 			<div className='estilos__container'>
 				<div className='estilos__text'>
 					<h2 className='estilos__title'>Elige tu estilo</h2>

@@ -2,6 +2,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -28,6 +29,8 @@ img {
   padding: 20px 0;
   background-color: #040406;
   z-index: 100;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .navbar__container {
@@ -601,4 +604,78 @@ img {
     top: 80%;
     left: 65%;
   }
+}
+
+.correas {
+  padding: 40px 0;
+}
+
+.correas__container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .correas__container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .correas__container {
+    width: 85%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .correas__container {
+    width: 1400px;
+    height: 100vh;
+    padding: 60px 0;
+  }
+}
+
+.correas__text {
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .correas__text {
+    text-align: left;
+  }
+}
+
+.correas__title {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+  .correas__title {
+    font-size: 35px;
+  }
+}
+
+.correas__images {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+}
+
+@media (min-width: 1200px) {
+  .correas__images {
+    overflow-x: hidden;
+  }
+}
+
+.correas__img {
+  width: 100%;
+}
+
+.footer {
+  background-color: #040406;
+  width: 100%;
+  height: 100px;
 }

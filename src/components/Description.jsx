@@ -2,7 +2,7 @@ import React from 'react';
 
 const Description = () => {
 	return (
-		<section className='description'>
+		<section id='descripcion' className='description'>
 			<div className='description__container'>
 				<div className='description__section-one'>
 					<div className='description__img description__img--blue'>

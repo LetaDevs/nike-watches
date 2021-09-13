@@ -4,6 +4,7 @@
 	padding: 20px 0;
 	background-color: $bgNegro;
 	z-index: 100;
+	transition: 0.3s;
 
 	&__container {
 		width: $mobileWidth;
