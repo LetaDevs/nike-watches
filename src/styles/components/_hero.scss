@@ -3,6 +3,14 @@
 	height: 100vh;
 	background-color: $bgNegro;
 
+	@include mq($ipadPro) {
+		height: 50vh;
+	}
+
+	@include mq($desktop) {
+		height: 100vh;
+	}
+
 	&__container {
 		width: $mobileWidth;
 		height: 80%;
@@ -19,6 +27,7 @@
 		}
 
 		@include mq($ipadPro) {
+			width: $ipadProWidth;
 			height: 90%;
 			display: grid;
 			grid-template-columns: repeat(2, 50%);

@@ -1,0 +1,138 @@
+.estilos {
+	background-color: $bgGris;
+	padding: 40px 0;
+
+	@include mq($ipadPro) {
+		height: 35vh;
+	}
+
+	@include mq($desktop) {
+		height: 100vh;
+	}
+
+	@include mq($ipadPro) {
+		background-image: url('./assets/colorbg.png');
+		background-position: center center;
+		background-size: cover;
+	}
+
+	&__container {
+		width: $mobileWidth;
+		margin: 0 auto;
+
+		@include mq($ipad) {
+			width: $ipadWidth;
+		}
+
+		@include mq($ipadPro) {
+			width: $ipadProWidth;
+
+			display: grid;
+			grid-template-columns: 7fr 3fr;
+		}
+
+		@include mq($desktop) {
+			width: $desktopWidth;
+		}
+	}
+
+	&__text {
+		text-align: center;
+
+		@include mq($ipadPro) {
+			order: 1;
+			color: #fff;
+			display: flex;
+			flex-direction: column;
+			padding-top: 20px;
+		}
+		@include mq($desktop) {
+			justify-content: center;
+			align-items: center;
+			height: 50vh;
+		}
+	}
+
+	&__title {
+		margin-bottom: 20px;
+
+		@include mq($desktop) {
+			font-size: 50px;
+		}
+	}
+
+	&__paragraph {
+		@include mq($desktop) {
+			font-size: 20px;
+		}
+	}
+
+	&__images {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: center;
+		margin-top: 40px;
+
+		@include mq($ipadPro) {
+			position: relative;
+		}
+
+		img {
+			width: 30%;
+
+			@include mq($ipad) {
+				width: 35%;
+			}
+
+			@include mq($ipadPro) {
+				width: 20%;
+			}
+		}
+	}
+
+	&__img-one {
+		@include mq($ipadPro) {
+			position: absolute;
+			top: 10%;
+			left: 5%;
+		}
+		@include mq($desktop) {
+			top: 20%;
+			left: 5%;
+		}
+	}
+	&__img-two {
+		@include mq($ipadPro) {
+			position: absolute;
+			top: 30%;
+			left: 25%;
+		}
+		@include mq($desktop) {
+			top: 40%;
+			left: 25%;
+		}
+	}
+	&__img-three {
+		@include mq($ipadPro) {
+			position: absolute;
+			top: 50%;
+			left: 45%;
+		}
+		@include mq($desktop) {
+			top: 60%;
+			left: 45%;
+		}
+	}
+	&__img-four {
+		@include mq($ipadPro) {
+			position: absolute;
+			top: 70%;
+			left: 65%;
+		}
+		@include mq($desktop) {
+			top: 80%;
+			left: 65%;
+		}
+	}
+}
