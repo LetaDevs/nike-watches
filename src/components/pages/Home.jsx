@@ -1,21 +1,24 @@
-import React from 'react';
-import Caracteristicas from '../Caracteristicas';
-import Correas from '../Correas';
-import Description from '../Description';
-import Estilos from '../Estilos';
+import React, {Suspense, lazy} from 'react';
 import Footer from '../Footer';
-import Hero from '../Hero';
 import Navbar from '../Navbar';
+
+const Hero = lazy(() => import('../Hero'));
+const Description = lazy(() => import('../Description'));
+const Caracteristicas = lazy(() => import('../Caracteristicas'));
+const Estilos = lazy(() => import('../Estilos'));
+const Correas = lazy(() => import('../Correas'));
 
 const Home = () => {
 	return (
 		<div className='home'>
 			<Navbar />
-			<Hero />
-			<Description />
-			<Caracteristicas />
-			<Estilos />
-			<Correas />
+			<Suspense fallback={<h3>cargando...</h3>}>
+				<Hero />
+				<Description />
+				<Caracteristicas />
+				<Estilos />
+				<Correas />
+			</Suspense>
 			<Footer />
 		</div>
 	);
